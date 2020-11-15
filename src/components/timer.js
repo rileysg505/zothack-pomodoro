@@ -94,11 +94,11 @@ class Timer extends React.Component {
                     : this.state.timerSec}
                 </span>
               </section>     
-              <sections className="timer-actions">
+              <section className="timer-actions">
                   <button onClick={this.playTimer}>Start</button>
                   <button onClick={this.stopTimer}>Stop</button>
                   <button onClick={this.resetTimer}>Reset</button>
-              </sections>
+              </section>
             </section>
         );
     }
