@@ -82,8 +82,8 @@ class Timer extends React.Component {
         return (
             <section>
               <section className="timer-container">
-                <h4>{this.state.isSession === true ? "Session" :
-                "Break"}</h4>
+                <h4>{this.state.isSession === true ? "Grind" :
+                "Chill"}</h4>
                 <span className="timer"> {this.props.timerMin}</span>
                 <span className="timer">:</span>
                 <span className="timer">
