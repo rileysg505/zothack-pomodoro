@@ -1,5 +1,6 @@
 // React and CSS Imports
 import React from "react";
+import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import "./App.scss";
 import BreakInterval from './components/break'
 import SessionLength from './components/session'
@@ -106,6 +107,7 @@ onPlayStopTimer(isPlay){
   render(){
     return (
       <main>
+        <Router>
         <h2>Pomodoro Clock</h2>
         <section className="interval-main-container">
           <BreakInterval 
@@ -127,6 +129,10 @@ onPlayStopTimer(isPlay){
         resetTimer={this.onResetTimer}
         onPlayStopTimer={this.onPlayStopTimer}
         />
+        <Switch>
+            <Route exact path="/"/>
+          </Switch>
+        </Router>
       </main>
     );
   }
