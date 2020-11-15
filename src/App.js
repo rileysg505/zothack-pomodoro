@@ -1,9 +1,9 @@
 // React and CSS Imports
 import React from "react";
 import "./App.scss";
-import BreakInterval from 'components/break'
-import SessionLength from 'components/session'
-import Timer from 'components/timer'
+import BreakInterval from './components/break'
+import SessionLength from './components/session'
+import Timer from './components/timer'
 
 class App extends React.Component {
   constructor() {
