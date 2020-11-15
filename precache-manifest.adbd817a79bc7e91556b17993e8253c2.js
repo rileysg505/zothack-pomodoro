@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "39c6b021a4ca0134db5fa51462f58428",
+    "revision": "f51ede1c5909860462dcf0c23f63174d",
     "url": "/zothack-pomodoro/index.html"
   },
   {
-    "revision": "b429e1e2f8ab3c90e7f4",
-    "url": "/zothack-pomodoro/static/css/main.c90bbafe.chunk.css"
+    "revision": "5ada9f7fab9ab9fcb9f7",
+    "url": "/zothack-pomodoro/static/css/main.719e9258.chunk.css"
   },
   {
     "revision": "491587e30418b8f386a0",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/zothack-pomodoro/static/js/2.a13fefe1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b429e1e2f8ab3c90e7f4",
-    "url": "/zothack-pomodoro/static/js/main.e1a34ab6.chunk.js"
+    "revision": "5ada9f7fab9ab9fcb9f7",
+    "url": "/zothack-pomodoro/static/js/main.90f78607.chunk.js"
   },
   {
     "revision": "5da8f50ee0749f4a2007",
