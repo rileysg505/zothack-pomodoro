@@ -107,7 +107,7 @@ onPlayStopTimer(isPlay){
   render(){
     return (
       <main>
-        <Router>
+        <Router basename="zothack-pomodoro">
         <h2>Pomodoro Clock</h2>
         <section className="interval-main-container">
           <BreakInterval 
