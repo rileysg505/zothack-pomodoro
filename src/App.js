@@ -1,28 +1,30 @@
 // React and CSS Imports
 import React from "react";
 import "./App.scss";
-import "globals/hack-styles.scss";
-import '../node_modules/react-vis/dist/style.css';
+import BreakInterval from 'components/break'
+import SessionLength from 'components/session'
+import Timer from 'components/timer'
 
-// Installed dependency imports
-import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
+class App extends React.Component {
+  constructor() {
+    super();
 
-// Website imports for classes you made
-import { UserList } from "app/views";
-
-function App() {
-  return (
-    <div className="app fill-view">
-      <Router>
-        <Switch>
-          <Route 
-            exact path={"/"}
-            component={UserList}
-          />
-        </Switch>
-      </Router>
-    </div>
-  );
+    this.state = {
+      break: 5,
+      session: 25,
+      timerMin: 25
+    }
+  }
+  render(){
+    return (
+      <main>
+        <h2>Pomodoro Clock</h2>
+        <BreakInterval breakInterval={this.state.break}/>
+        <SessionLength SessionLength={this.state.session}/>
+        <Timer timerMin={this.state.timerMin} />
+      </main>
+    );
+  }
 }
 
 export default App;

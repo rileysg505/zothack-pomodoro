@@ -1,13 +1,18 @@
 @import "globals/hack-variables.scss";
 
-.app {
-  text-align: center;
+main {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  height: 90vh;
+  justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, $left-gradient, $right-gradient);
-  overflow-y: auto;
 }
+
+h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
 
 
 
