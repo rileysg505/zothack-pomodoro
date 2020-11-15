@@ -18,9 +18,9 @@ function SessionLength(props) {
     <section>
     <h4>Session Length</h4>
         <section className="interval-container">
-            <button onClick={decreaseSession}>Down</button>
-            <p>{props.sessionLength}</p>
-            <button onClick={increaseSession}>Up</button>
+            <button disabled= {props.isPlay === true ? "disabled" : ""} onClick={decreaseSession}>-</button>
+            <p className="interval-length">{props.sessionLength}</p>
+            <button  disabled= {props.isPlay === true ? "disabled" : ""} onClick={increaseSession}>+</button>
         </section>
     </section>
         
