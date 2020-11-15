@@ -1,14 +1,31 @@
 import React from 'react';
 
 function BreakInterval(props) {
+    function decreaseCounter() {
+        if (props.breakInterval === 1) {
+            return;
+        }
+        props.decreaseBreak()
+    }
 
-    return (
-        <sections>
-            <button>Down</button>
+    function increaseCounter() {
+        if (props.sessionLength === 60) {
+            return;
+        }
+
+        props.increaseBreak()
+    }
+
+  return (
+    <section>
+        <h4>Break Length</h4>
+        <section className="interval-container">
+            <button onClick={decreaseCounter}>Down</button>
             <p>{props.breakInterval}</p>
-            <button>Up</button>
-        </sections>
-    );
+            <button onClick={increaseCounter}>Up</button>
+        </section>
+    </section>
+    )
 }
 
 export default BreakInterval;

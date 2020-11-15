@@ -12,20 +12,24 @@ class Timer extends React.Component {
     render () {
         return (
             <section>
-              <section>
+              <section className="timer-container">
                 <h4>{this.state.isSession === true ? "Session" :
                 "Break"}</h4>
-                <span> {this.props.timerMin}</span>
-                <span>:</span>
-                <span>
+                <span className="timer"> {this.props.timerMin}</span>
+                <span className="timer">:</span>
+                <span className="timer">
                   {this.state.timerSec === 0 
                     ? "00" 
                     :this.state.timerSec < 10 
                     ? "0" + this.state.timerSec 
                     : this.state.timerSec}
                 </span>
-              </section>
-        );
+              </section>     
+              <sections className="timer-actions">
+                  <button>Start</button>
+                  <button>Stop</button>
+                  <button>Reset</button>
+              </sections>
             </section>
         );
     }
