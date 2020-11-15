@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/zothack-pomodoro/precache-manifest.adbd817a79bc7e91556b17993e8253c2.js"
+  "/zothack-pomodoro/precache-manifest.b73c2580c03cab917dc0a7daea0f4d03.js"
 );
 
 self.addEventListener('message', (event) => {
